@@ -19,12 +19,13 @@ const daftarGambar = [
     
     function siapaYangmenang (){
      if ((kembali1[1]+1) - (kembali2[1]+1) > 0 ){
-     console.log("image1 win")
-    }else if((kembali1[1]+1) - (kembali2[1]+1) < 0 ){
-      console.log("image2 win")
-    }else{
-      console.log("draw")
-    }
+         document.querySelector("h1").innerHTML = "Player 1 Menang🚩";
+        }else if((kembali1[1]+1) - (kembali2[1]+1) < 0 ){
+          document.querySelector("h1").innerHTML = "Player 2 Menang🚩";
+        }else{
+          document.querySelector("h1").innerHTML = "Imbang";
+        }
 
   }
-  siapaYangmenang();
+  
+  siapaYangmenang ()
